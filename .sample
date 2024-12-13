@@ -1,0 +1,66 @@
+import java.util.Scanner;
+
+public class Samples {
+	Scanner scan = new Scanner(System.in);
+	public void whiler()
+	{
+		String reply = "yes";
+		while(reply.equals("yes"))
+		{
+			System.out.println("Hey You Have selected Yes");
+			System.out.println("Do you wish to continue yes/no");
+			reply = scan.next();
+			
+			
+		}
+		do
+		{
+			
+		}while(reply.equals("yes"));
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Samples sam = new Samples();
+	/*	sam.whiler();
+		int score = 67;
+		String result = (score >= 50) ? "Passed" : "Sorry";
+		System.out.println(result);
+		
+		System.out.println("The ");*/
+		sam.displaySquare();
+
+	}
+	public void displaySquare()
+	{
+		String reply="y";
+		int num1;
+		int sqr;
+		
+		
+		
+		while(reply.equals("y"))
+		{
+			System.out.println("Enter a Number ");
+			num1 = scan.nextInt();
+			if(num1 > 50)
+			{
+				System.out.println("Sorry Number to be less than or equal 50");
+				//break;
+				continue;
+			}
+			else
+			{
+				sqr = num1 * num1;
+				System.out.println("Square is "+sqr);
+			}
+			System.out.println("Do you wish to cont y / n");
+			reply = scan.next();
+			
+		}
+		
+		
+	}
+
+}
+
+
